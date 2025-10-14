@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Form</title>
+        <style>
+            footer{
+                border-bottom: hsl(0, 0%, 80%);
+                padding: 10px 20px;
+                text-align: center;
+                background: #ccc;
+            }
+            .nav{
+                text-align: center;
+                padding: 10px 20px;
+                margin-top: 50px;
+                background: #ccc;
+
+            }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        form {
+            width: 400px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        fieldset {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 0;
+        }
+        legend {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea,
+        input[type="date"] {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .gender-group {
+            margin-bottom: 10px;
+        }
+        .gender-group label {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        input[type="radio"] {
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+        }
+        .para{
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        <form>
+            <h2 class="nav">welcome to my website!</h2>
+            <p class="para"><strong>User Personal Information</strong></p>
+            <label for="Name">Enter your Full Name</label><br>
+            <input type="text" placeholder="Enter name"><br>
+            <label for="id">Enter your email id</label><br>
+            <input type="text" placeholder="enter you email"><br>
+            <label for="password">Enter your password</label><br>
+            <input type="text" placeholder="enter your password"><br>
+            <label for="confirm password">Confirm your password</label><br>
+            <input type="text" placeholder="enter your password"><br>
+            <legend>Gender</legend>
+            <div class="gender-group">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="others" name="gender" value="others">
+                <label for="others">Others</label>
+            </div>
+            <label for="dob">Enter your Date of Birth</label><br>
+            <input type="date" placeholder="dd/mm/yy"><br>
+            <label for="address">Enter your Address</label><br>
+            <textarea id="address" name="address"></textarea><br>
+            <input type="submit" ><br>
+            <footer>Made by Sanskar Puri 2025</footer>
+        </form>
+    </body>
+</html>
