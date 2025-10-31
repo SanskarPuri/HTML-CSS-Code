@@ -1,0 +1,10 @@
+# Ignore image files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.txt
+
+# Ignore entire images folder
+images/

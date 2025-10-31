@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rail-img{
+            background-image: url("images/rail.jpg");
+            background-size: cover;
+            margin-left: auto;
+            margin-right: auto;
+            width: 400px;
+            height: 700px;
+            display: block;
+        }
+        h1{
+            text-align: center;
+            padding-top: 100px;
+            font-size: 50px;
+
+        }
+        h2{
+            text-align: center;
+            font-weight: bold;
+            font-weight: 900;
+            font-size: 80px;
+        }
+        button{
+             display: block;
+             margin: 20px auto; /* This centers the button horizontally */
+             padding: 10px 20px;
+             font-size: 18px;
+             border: 12px;
+        }
+        #btn{
+            background: darkred;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+        #save-btn{
+            background: green;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto; /* This centers the button horizontally */
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="rail-img" id="rail">
+        <h1><b>People Entered</b></h1>
+        <h2 id="count-el">0</h2>
+        <button id="btn" onclick="increment()">INCREMENT</button>
+        <button id="save-btn" onclick="save()">Save</button>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
